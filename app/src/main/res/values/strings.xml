@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Fiscal API</string>
+    <string name="xml_venta_no_recibido">XML de venta no recibido</string>
+    <string name="seleccionar_configuracion">Seleccionar Configuración</string>
+    <string name="configuracion_actual">Configuración actual</string>
+    <string name="nueva_configuracion">Nueva Configuración</string>
+    <string name="guardar">Guardar</string>
+    <string name="llave_criptografica">Llave criptográfica</string>
+    <string name="datos_de_conexion">Datos de conexión</string>
+    <string name="pin_llave_criptografica">PIN llave criptográfica</string>
+    <string name="contrasena_atv">Contraseña ATV</string>
+    <string name="usuario_atv">Usuario ATV</string>
+    <string name="nombre_cliente">Nombre Cliente</string>
+    <string name="ambiente">Ambiente</string>
+    <string name="seleccionar_una_opcion">Seleccionar una opción</string>
+    <string name="pruebas">Pruebas</string>
+    <string name="produccion">Producción</string>
+    <string name="buscar">Buscar</string>
+    <string name="campo_requerido">Requerido!</string>
+    <string name="guardado_correctamente">Se ha guardado correctamente</string>
+    <string name="seleccionar_archivo">Seleccionar Archivo .p12</string>
+    <string name="email_invalido">Email Inválido!</string>
+    <string name="configuracion_no_disponible">Configuración (Pruebas o Producción) no disponible</string>
+    <string name="consecutivo">Consecutivo</string>
+    <string name="clave">Clave</string>
+    <string name="nombre">Nombre *</string>
+    <string name="identificacion">Identificación *</string>
+    <string name="nombre_comercial">Nombre Comercial (opcional)</string>
+    <string name="tipo_identificacion">Tipo de identificación *</string>
+    <string name="provincia">Provincia *</string>
+    <string name="canton">Canton *</string>
+    <string name="distrito">Distrito *</string>
+    <string name="barrio">Barrio (opcional)</string>
+    <string name="telefono">Teléfono (opcional)</string>
+    <string name="correo_electronico">Correo Electrónico *</string>
+    <string name="direccion">Dirección *</string>
+    <string name="seleccione_una_opcion">Seleccione una opción</string>
+    <string name="ejm_num_telefono">88359042</string>
+    <string name="fax">Fax (opcional)</string>
+    <string name="formato_invalido">Formato inválido</string>
+    <string name="archivo_cargado">archivo cargado!</string>
+    <string name="campos_requeridos">Campos requeridos(*)</string>
+    <string name="por_favor_esperar">Por favor esperar…</string>
+    <string name="estado_hacienda">Estado Hacienda</string>
+    <string name="paso_uno_titulo">VALIDACION DE DATOS</string>
+    <string name="paso_uno_descripcion">Validando datos de HIOPOS</string>
+    <string name="paso_dos_titulo">GENERANDO COMPROBANTE ELECTRÓNICO</string>
+    <string name="paso_dos_descripcion">Creación del XML para Hacienda</string>
+    <string name="paso_tres_titulo">ENVIANDO COMPROBANTE ELECTRÓNICO</string>
+    <string name="paso_tres_descripcion">Enviando comprobante a M.Hacienda</string>
+    <string name="paso_cuatro_titulo">LOGIN HACIENDA</string>
+    <string name="paso_cuatro_descripcion">Inicio de sesión con Hacienda</string>
+    <string name="paso_cinco_titulo">ENVIANDO COMPROBANTE ELECTRÓNICO</string>
+    <string name="paso_cinco_descripcion">Enviando comprobante electrónico a Hacienda</string>
+    <string name="paso_seis_titulo">OBTENIENDO RESPUESTA DE HACIENDA</string>
+    <string name="paso_seis_descripcion">Consultando estado del comprobante electrónico</string>
+    <string name="configuracion">Configuración</string>
+    <string name="confirmar_comprobante">Confirmar Comprobante</string>
+    <string name="cargar_archivo_xml">Cargar archivo XML</string>
+    <string name="cargar_xml">Cargar XML</string>
+    <string name="numero_cedula_emisor">Número Cédula Emisor</string>
+    <string name="fecha_emision">Fecha Emisión</string>
+    <string name="monto_total_impuesto">Monto Total Impuesto</string>
+    <string name="numero_cedula_receptor">Número Cédula Receptor</string>
+    <string name="numero_consecutivo_receptor">Número Consecutivo Receptor</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="detalle_mensaje">Detalle Mensaje</string>
+    <string name="enviar_respuesta">Enviar Respuesta</string>
+    <string name="ej_codigo_pais">Ej: 506</string>
+    <string name="seleccione_una_provincia">Seleccione una Provincia!</string>
+    <string name="seleccione_tipo_identificacion">Seleccione un tipo de Identificación!</string>
+    <string name="seleccione_un_canton">Seleccione un Cantón!</string>
+    <string name="seleccione_un_distrito">Seleccione un Distrito!</string>
+    <string name="no_encontro_archivo">No se encontró el archivo en la carpeta Descarga!</string>
+    <string name="no_hay_internet">No hay internet</string>
+    <string name="comprobante_pendiente_enviar_hacienda">Se guardó el comprobante.\nQueda pendiente el envío a Ministerio de Hacienda</string>
+    <string name="regresar_hiopos">Regresar a HIOPOS</string>
+    <string name="error_web_service">Error Web Service Firma</string>
+    <string name="error_login">Error: Inicio sesión M.Hacienda</string>
+    <string name="comprobante_enviado">Comprobante Enviado</string>
+    <string name="estado_actual">Estado actual</string>
+    <string name="guardando_configuracion">Configuración guardada correctamente</string>
+    <string name="no_sincronizo_consecutivos">Se guardó la configuración, pero no se sincronizaron los consecutivos.\nIntente nuevamente.</string>
+    <string name="configuracion_creada_consecutivo_actualizado">Configuración guardada y consecutivos sincronizados exitosamente.</string>
+    <string name="usuario_mdg">Usuario MDG</string>
+    <string name="contrasena_mdg">Contraseña MDG</string>
+    <string name="comprobante_enviado_exitosamente">Comprobante electrónico enviado exitosamente.</string>
+    <string name="digitos_minimos_nueve">Min 9 dígitos</string>
+    <string name="digitos_minimos_diez">Min 10 dígitos</string>
+    <string name="digitos_minimos_once">Min 11 dígitos</string>
+    <string name="validar_credenciales">Validar Credenciales</string>
+    <string name="validacion_cedula_fisica">Cédula fisica (Solo numeros, no puede iniciar en 0)</string>
+    <string name="llenar_campos_requeridos">Llenar campos requeridos</string>
+    <string name="presiono_produccion">Se presionó producción </string>
+    <string name="presiono_pruebas">Se presionó pruebas</string>
+    <string name="presiono_cc">Se presionó CC</string>
+    <string name="logactivo">Se activó el Log</string>
+
+    <string name="inicio_tran">Se ha iniciado la transacción</string>
+    <string name="insertdb">Comprobante guardado y encolado</string>
+    <string name="tipo_tran">Tipo de transacción</string>
+
+    <string name="configuracion_vacia">La configuración está vacía</string>
+    <string name="cargar_configuracion_usuario">Se cargará la configuración del usuario %s</string>
+    <string name="actualmente_produccion">Actualmente estás en Producción</string>
+    <string name="actualmente_pruebas">Actualmente estás en Pruebas</string>
+    <string name="actualmente_cc">Actualmente solo Clave y Consecutivo</string>
+    <string name="usuario_mdg_requerido">Se requiere el usuario de MDG</string>
+    <string name="contrasena_mdg_requerido">Se requiere la contraseña de MDG</string>
+    <string name="credenciales_correctas">Las credenciales son correctas</string>
+    <string name="credenciales_incorrectas">La usuario o la contraseña es incorrecta</string>
+    <string name="fallo_conexion">¡Falló la conexión! Inténtelo más tarde</string>
+    <string name="usuario_incorrecto">Usuario incorrecto</string>
+    <string name="contrasena_incorrecta">Contraseña incorrecta</string>
+    <string name="verificar">¡Verificar!</string>
+    <string name="sale_result_positive">Comprobante procesado por API Fiscal, se enviará a hacienda tan pronto sea posible</string>
+    <string name="sale_result_invitation">Tipo documento Invitación - No se envía a DGT</string>
+    <string name="sale_result_negative">Ocurrió un problema al procesar la factura, comuniquese con los desarrolladores</string>
+    <string name="invitation_document_type">Invitacion</string>
+
+
+    <!-- Array for spinner ambientes-->
+    <string-array name="ambientes">
+        <item>Pruebas</item>
+        <item>Producción</item>
+    </string-array>
+
+    <string-array name="secciones">
+        <item>Datos Emisor</item>
+        <item>Credenciales MDG</item>
+    </string-array>
+
+    <string-array name="mensaje">
+        <item>Seleccione una opción</item>
+        <item>ACEPTADO</item>
+        <item>RECHAZADO</item>
+        <item>ACEPTADO PARCIALMENTE</item>
+    </string-array>
+
+</resources>

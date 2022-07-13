@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fiscalapi.icg.es.apifiscal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <!--Obligar los permisos (FA)-->
+    <uses-feature android:name= "android.permission.INTERNET"
+        android:required="false"/>
+    <uses-feature android:name= "android.permission.WRITE_INTERNAL_STORAGE"
+        android:required="false"/>
+    <uses-feature android:name= "android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false"/>
+
+    <application
+        android:name=".ApiFiscalApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".Views.WrongVouchersActivity.WrongVouchersActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".Views.Configuration.ConfigurationActivity"
+            android:screenOrientation="landscape"
+            android:exported="true"/>
+        <activity
+            android:name=".Views.HIOPOSActivity.HIOPOSActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="icg.actions.fiscalPrinter.GET_VERSION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="icg.actions.fiscalPrinter.GET_BEHAVIOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="icg.actions.fiscalPrinter.SALE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="icg.actions.fiscalPrinter.VOID_SALE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="icg.actions.fiscalPrinter.PRINT_COPY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Views.MainActivity.MainActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Service.VoucherSenderService"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "es.icg.fiscalapi"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 74
+        versionName "74"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.media:media:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.github.devlight.navigationtabstrip:navigationtabstrip:1.0.4'
+    //implementation 'com.jakewharton:butterknife:8.8.1'
+    //Mockito
+    testImplementation 'org.mockito:mockito-core:2.12.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.12.0'
+    //greenDao
+    implementation 'org.greenrobot:greendao:3.2.2'
+    //dagger2
+    implementation 'com.google.dagger:dagger:2.11'
+    implementation 'com.google.dagger:dagger-android-support:2.11'
+    annotationProcessor "com.google.dagger:dagger-android-processor:2.11"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.11"
+    //reactive
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.4'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.4.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    //xml
+    implementation 'org.simpleframework:simple-xml:2.7'
+    implementation 'org.decimal4j:decimal4j:1.0.3'
+
+    configurations {
+        all*.exclude group: 'xpp3', module: 'xpp3'
+        implementation.exclude group: "org.apache.httpcomponents", module: "httpclient"
+    }
+}
